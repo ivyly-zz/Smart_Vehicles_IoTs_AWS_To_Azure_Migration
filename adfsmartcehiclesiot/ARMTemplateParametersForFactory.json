@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfsmartcehiclesiot"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AmazonS31_properties_typeProperties_accessKeyId": {
+			"value": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "s3accesskeyid"
+			}
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://smartvehiclesiot.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaultsmartvehiclesiot.vault.azure.net/"
+		},
+		"StorageTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/9355a16b-be0b-4e6d-b6e2-7ef270378663/resourceGroups/smartvehiclesresourceggroup/providers/Microsoft.Storage/storageAccounts/smartvehiclesiot"
+		},
+		"Storage_Trigger_For_JSON_properties_typeProperties_scope": {
+			"value": "/subscriptions/9355a16b-be0b-4e6d-b6e2-7ef270378663/resourceGroups/smartvehiclesresourceggroup/providers/Microsoft.Storage/storageAccounts/smartvehiclesiot"
+		}
+	}
+}

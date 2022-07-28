@@ -1,0 +1,17 @@
+{
+	"name": "Storage_Trigger_For_JSON",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/staging/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/9355a16b-be0b-4e6d-b6e2-7ef270378663/resourceGroups/smartvehiclesresourceggroup/providers/Microsoft.Storage/storageAccounts/smartvehiclesiot",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

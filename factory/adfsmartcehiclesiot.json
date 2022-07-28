@@ -1,0 +1,9 @@
+{
+	"name": "adfsmartcehiclesiot",
+	"location": "australiasoutheast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e21835ad-1612-4504-8334-abc578b47946",
+		"tenantId": "7761a145-5718-4f21-a91a-b628f9fb4436"
+	}
+}

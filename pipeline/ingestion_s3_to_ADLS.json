@@ -1,5 +1,5 @@
 {
-	"name": "Ingestion_s3_to_ADLS",
+	"name": "ingestion_s3_to_ADLS",
 	"properties": {
 		"activities": [
 			{

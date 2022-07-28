@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "stage_to_SQL_DB",
+					"referenceName": "stage_to_SQL_db",
 					"type": "PipelineReference"
 				}
 			}
